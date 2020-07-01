@@ -16,7 +16,7 @@ while True:
     while True:
         for i in range(10):
             try:
-                ser = serial.Serial('/dev/ttyUSB0', 9600)
+                ser = serial.Serial('/dev/ttyUSB' + str(i), 9600)
             except Exception as e:
                 print(e)
                 sleep(1)
