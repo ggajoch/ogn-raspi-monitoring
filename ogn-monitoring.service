@@ -1,0 +1,13 @@
+[Unit]
+Description=OGN monitoring
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=pi
+ExecStart=/usr/bin/python /home/pi/ogn-raspi-monitoring-master/raspi_deamon.py
+
+[Install]
+WantedBy=multi-user.target
