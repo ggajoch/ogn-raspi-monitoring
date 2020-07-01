@@ -44,5 +44,6 @@ while True:
         except Exception as e:
             print(e)
             sleep(1)
+            break
 
     sleep(10)
